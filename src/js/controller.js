@@ -87,6 +87,9 @@ const controlAddBookMark = function () {
 const controleBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
+const newFeture = function () {
+  console.log('welcome to the application !');
+};
 
 const controlAddRecipe = async function (newRecipe) {
   try {
@@ -129,6 +132,7 @@ const init = function () {
   searchView.addHandlerSearch(controllerSearchResult);
   paginationView.addHandlerClick(controlPagination);
   AddRecipeView._addHandlerUploadWindow(controlAddRecipe);
+  newFeture();
 };
 
 init();
